@@ -16,12 +16,16 @@ body {
 	height: 500px; }
 
 /* Nav */
-/*nav {
-	height: 25px;
-}*/
-
 .btn-success {
 	margin-top: 4px;
+}
+
+button {
+	background-color: green;
+}
+
+button.navbar-toggle.collapsed.btn.btn-success {
+	background-color: green;
 }
 
 .fa-plus-circle {
@@ -33,4 +37,13 @@ body {
 	background-color: #34495e;
 	width: 100%;
 	font-color: #bdc3c7;
+}
+
+
+/* ============ SMALLER SCREENS ================ */
+
+@media(max-width:767px){
+	button#mainAddBtn {
+		display: none;
+	}
 }
