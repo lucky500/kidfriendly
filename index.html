@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Things to do with Kids</title>
+	<meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+	<link rel="stylesheet" href="lib/tether/tether.min.css">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="lib/leaflet/leaflet.css"> -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-inverse navabar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <button type="button" class="navbar-toggle collapsed" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+					<i class="fa fa-plus-circle" aria-hidden="true"></i>
+        </button>
+        <a class="navbar-brand" href="#">Kid Friendly Mass</a>
+      </div>
+		  <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <div class="pull-right">
+        	<button type="submit" class="btn btn-success"><i class="fa fa-plus-circle" aria-hidden="true"></i>Add new Event</button>
+        </div>           
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+	<div id='map_simple' class='mapSimple'></div>
+  <div class="row" id="mainForm">
+  		<h4>Find fun things to do with your children in Massachusetts!</h4>
+  		<div class="input-group">
+  			<input type="text" class="form-control" placeholder="Find things to do with your kids in Massachusetts" aria-describedby="basic-addon1">
+  	  	<span class="input-group-addon" id="basic-addon1">Search</span>
+			</div>
+  </div>
+  <!-- Example row of columns -->
+  <div class="container">
+	  <div class="row">
+	    <div class="col-md-4">
+	      <h2>Heading</h2>
+	      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+	    </div>
+	    <div class="col-md-4">
+	      <h2>Heading</h2>
+	      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+	   </div>
+	    <div class="col-md-4">
+	      <h2>Heading</h2>
+	      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+	      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+	    </div>
+	  </div>
+
+	  <hr>
+
+	  <footer>
+	    <p>&copy; Company 2016</p>
+	  </footer>
+	</div> <!-- /container -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+	<script src="lib/tether/tether.min.js"></script>	
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+	<!-- <script src="lib/leaflet/leaflet.js"></script>	-->
+	<script src="assets/js/main.js"></script>		
+</body>
+</html>
