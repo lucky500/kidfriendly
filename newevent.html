@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="lib/tether/tether.min.css">	
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 	<div class="container">
@@ -45,19 +46,23 @@
 	          <label for="icon_telephone">Telephone</label>
       		</div>
 					<div class="input-field col s12">
-						<input id="date" type="date" class="datepicker">
-						<!-- <label for="event-date">Event Date:</label> -->
-					</div>
-					<div class="input-field col s12">
-						<span>Recurring Event?</span>
-						<span class="s3">
-							<input name="group1" id="yes" type="radio" class="validate with-gap" checked>
-							<label for="yes">Yes</label>
-						</span>
-						<span class="s3">
-							<input name="group1" id="no" type="radio" class="validate with-gap">
-							<label for="no">No</label>						
-						</span>
+						<div class="input-field col s6">
+							<input id="date" type="date" class="datepicker">
+							<label for="date">Event Date:</label>
+						</div>
+						<div class="input-field col s6 valign-wrapper">
+							<span class="valign">Recurring Event?</span>
+							<div class="radioButtons">
+								<span>
+									<input name="group1" id="yes" type="radio" class="validate with-gap" checked>
+									<label for="yes">Yes</label>
+								</span>
+								<span>
+									<input name="group1" id="no" type="radio" class="validate with-gap">
+									<label for="no">No</label>						
+								</span>
+							</div>
+						</div>					
 					</div>
 					<div class="input-field col s6">
 						<input placeholder="00:00" id="start-time" type="text" class="validate">
