@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>New Event</title>
+	<meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="lib/tether/tether.min.css">	
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<h3>New Event</h3>
+			<form action="#" class="col s12">
+				<div class="row">
+					<div class="file-field input-field">
+						<div class="btn">
+							<span>Upload File</span>
+							<input type="file">
+						</div>
+						<div class="file-path-wrapper">
+							<input type="text" class="file-path validate" placeholder="Please Upload an Image for your event." length="10"> 
+						</div>
+					</div>
+					<div class="input-field col s12">
+						<input id="title" type="text" class="validate">
+						<label for="title">Title:</label>
+					</div>
+					<div class="input-field col s12">
+						<input id="address" type="text" class="validate">
+						<label for="address">Address:</label>
+					</div>
+					<div class="input-field col s6">
+						<input id="city" type="text" class="validate">
+						<label for="city">City:</label>
+					</div>
+					<div class="input-field col s6">
+						<input id="zip" type="text" class="validate">
+						<label for="zip">Zip:</label>
+					</div>					
+					<div class="input-field col s12">
+	          <i class="fa fa-phone prefix" aria-hidden="true"></i>
+	          <input id="icon_telephone" type="tel" class="validate">
+	          <label for="icon_telephone">Telephone</label>
+      		</div>
+					<div class="input-field col s12">
+						<input id="date" type="date" class="datepicker">
+						<!-- <label for="event-date">Event Date:</label> -->
+					</div>
+					<div class="input-field col s12">
+						<span>Recurring Event?</span>
+						<span class="s3">
+							<input name="group1" id="yes" type="radio" class="validate with-gap" checked>
+							<label for="yes">Yes</label>
+						</span>
+						<span class="s3">
+							<input name="group1" id="no" type="radio" class="validate with-gap">
+							<label for="no">No</label>						
+						</span>
+					</div>
+					<div class="input-field col s6">
+						<input id="start-time" type="time" class="validate">
+						<label for="start-time">Start Time:</label>
+					</div>
+					<div class="input-field col s6">
+						<input id="end-time" type="time" class="validate">
+						<label for="end-time">End Time:</label>
+					</div>
+					<div class="input-field col s6">
+						<input id="admission" type="number" class="validate">
+						<label for="admission">Admission (Price):</label>
+					</div>
+					<div class="input-field col s6">
+						<input id="free" type="checkbox" class="validate">
+						<label for="free">If Free, please check:</label>
+					</div>
+					<div class="input-field col s12">
+						<input id="website" type="text" class="validate">
+						<label for="website">Event Website:</label>
+					</div>
+					<div class="input-field col s12">
+          	<i class="fa fa-pencil prefix" aria-hidden="true"></i>
+          	<textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          	<label for="icon_prefix2">Description of Event:</label>
+        	</div>					
+				</div>
+			</form>
+		</div>
+					<td>Tags:</td>
+					<td>
+						<input type="checkbox"> Food
+						<input type="checkbox"> Arts 
+						<input type="checkbox"> Sports
+						<input type="checkbox"> Movies
+					</td>
+				</tr>	
+			</tbody>
+		</table>
+		<div class="text-center">
+			<button class="btn btn-primary">Create Event!</button>			
+		</div>
+	</div>
+	<input type="text" class="datepicker">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>	
+<!--<script src="lib/pickadate/legacy.js"></script>
+<script src="lib/pickadate/picker.js"></script>
+<script src="lib/pickadate/picker.date.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>  
+<script>
+	$('.datepicker').pickadate();
+	picker.close();
+</script>
+</body>
+</html>

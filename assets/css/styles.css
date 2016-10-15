@@ -102,6 +102,8 @@ button.navbar-toggle.collapsed.btn.btn-success {
 	margin: 0;
 }
 
+/* ============ ADD EVENTS PAGE ================ */
+
 /* ============ SMALLER SCREENS ================ */
 
 @media(max-width:767px){
@@ -109,3 +111,4 @@ button.navbar-toggle.collapsed.btn.btn-success {
 		display: none;
 	}
 }
+
