@@ -91,10 +91,6 @@ button.navbar-toggle.collapsed.btn.btn-success {
 	margin-top: 15px;
 }
 
-.col-md-4 {
-
-
-}
 
 .col-md-4 img {
 	width: 100%;
@@ -107,7 +103,16 @@ button.navbar-toggle.collapsed.btn.btn-success {
 	margin-bottom: 18px;
 }
 
+.label-rows {
+	text-align: center;
+}
 
+
+
+.label-rows [type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after
+{
+	margin-left: 13px;
+}
 /* ============ SMALLER SCREENS ================ */
 
 @media(max-width:767px){
@@ -115,4 +120,5 @@ button.navbar-toggle.collapsed.btn.btn-success {
 		display: none;
 	}
 }
+
 
