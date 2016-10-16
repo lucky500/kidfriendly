@@ -99,6 +99,20 @@ button.navbar-toggle.collapsed.btn.btn-success {
 }
 
 /* ============ ADD EVENTS PAGE ================ */
+.event-page-body {
+	background: url(../../img/bg1.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.new-event-container {
+	background-color: white;
+	width: 60%;
+	padding: 30px 30px 20px 30px;
+}
+
 .radioButtons {
 	margin-bottom: 18px;
 }
@@ -108,17 +122,34 @@ button.navbar-toggle.collapsed.btn.btn-success {
 }
 
 
-
 .label-rows [type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after
 {
 	margin-left: 13px;
 }
+
+.btn-primary {
+	margin: 0 auto;
+}
+
+.main-row > p {
+	font-variant: small-caps;
+	font-size: 2em;
+	text-align: center;
+}
+
+
+
 /* ============ SMALLER SCREENS ================ */
 
 @media(max-width:767px){
 	button#mainAddBtn {
 		display: none;
 	}
+	/* ==== ADD EVENTS PAGE ==== */
+	.new-event-container {
+		width: 80%;
+	}
+
 }
 
 
